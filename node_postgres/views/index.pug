@@ -1,0 +1,16 @@
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title= node js + postgresql (ToDoList)
+    body 
+        h1= ToDoListTitle 
+        form(action='/add_list' method='POST')
+            p
+                label(for='content') 할일 추가:
+                label(type='text' name='content' autocomplete='off')
+                label(type='submit' value='추가하기')
+            p 
+                ul 
+                    each val in toDoLists
+                        li= val                            =val
