@@ -1,0 +1,9 @@
+const path = require('path')
+
+module.exports = {
+    'config': path.resolve('./pra_node/config', 'config.js'),
+    'models-path': path.resolve('./pra_node/models'),
+    'migrations-path': path.resolve('./pra_node/migrations'),
+    'seeders-path': path.resolve('./pra_node/seeders')
+}
+
